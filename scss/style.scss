@@ -1,0 +1,129 @@
+@import "_variable";
+@import "_mixin";
+
+.body__container {
+    height: 100vh;
+    position: relative;
+    background: $cement;
+    & * {
+        box-sizing: border-box;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        //box-shadow: 0px 3px 10px -3px $black;
+        h1 {
+            font-family: $title;
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            color: $white;
+        }
+        ul {
+            width: 50%;
+            margin-right: auto;
+            padding: 0 5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            font-family: $contents;
+            font-size: 1.8rem;
+            font-weight: 500;
+            li {
+                a {
+                    padding: .5rem 1rem;
+                    color: $gray;
+                    &:hover {
+                        text-decoration: underline;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    header {
+        display: flex;
+        .photo-header {
+            @include headerImages('../images/header-camera.jpg');
+        }
+        .video-header {
+            @include headerImages('../images/header-video.jpg');
+        }
+    }
+    main {
+        .myWork-section {
+            height: 100vh;
+            background: $cement;
+            padding: 20vh 15vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            h2 {
+                font-family: $contents;
+                font-size: 4.8rem;
+                font-weight: 600;
+                color: $gray;
+                margin-bottom: 2rem;
+            }
+            .btn-group {
+                text-align: right;
+                a {
+                    font-family: $contents;
+                    font-size: 2rem;
+                    color: $gray;
+                    outline: none;
+                    border: none;
+                    background: none;
+                    margin-left: 1rem;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                        color: $white;
+                    }
+                }
+            }
+            .mywork-imgs {
+                width: 100%;
+                height: 60vh;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                ul {
+                    padding: 1rem;
+                    overflow-y: scroll;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: auto;
+                    gap: 1.5rem;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    li {
+                        width: 100%;
+                        &:first-child {
+                            grid-column: span 3;
+                            font-family: $contents;
+                            font-weight: 600;
+                            font-style: italic;
+                            font-size: 2.4rem;
+                            color: $white;
+
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        
+    }
+}
