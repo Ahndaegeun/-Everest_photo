@@ -13,29 +13,79 @@
 
     <nav>
         <h1>Space, Empathy</h1>
-        <ul>
+        <a class="gotohome" href="/index.html">&lt;</a>
+        <ul style="display: none;">
             <li><a href="index.html">Photo And Video</a></li>
             <li><a href="#mywork">My Work</a></li>
-            <li><a href="#">Connect</a></li>
+            <li><a href="#connect">Connect</a></li>
         </ul>
     </nav>
 
-    <header>
-        <div class="photo-header"></div>
-        <div class="video-header"></div>
+    <header style="display: none;">
+        <div id="photo" class="photo-header"></div>
+        <div id="video" class="video-header"></div>
     </header>
 
     <main>
 
-        <section class="photo-section" style="display: none;">
-
+        <section class="photo-section">
+            <div class="photo-grid-container">
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+                <div class="photo-item">
+                    <img src="images/Volunteer1.jpg" alt="">
+                    <a href="/images/Volunteer1.jpg">hi</a>
+                </div>
+            </div>
         </section>
 
         <section class="video-section" style="display: none;">
 
         </section>
 
-        <section id="mywork" class="myWork-section">
+        <section id="mywork" class="myWork-section" style="display: none;">
             <h2>My Work</h2>
             <div class="work-container">
                 <div class="btn-group">
@@ -77,8 +127,34 @@
 
     </main>
 
-    <footer>
-
+    <footer id="connect" style="display: none;">
+        <div class="profile-section">
+            <div class="user-img">Photographer profile</div>
+            <ul class="text-hidden">
+                <li class="profile-title">Photographer</li>
+                <li class="profile-description">Everest Choi</li>
+            </ul>
+            <ul class="text-hidden">
+                <li class="profile-title">Instagram</li>
+                <li class="profile-description">
+                    <a href="https://www.instagram.com/bang_foto_/" target="_blank">Go to Instagram</a>
+                </li>
+            </ul>
+            <ul class="text-hidden">
+                <li class="profile-title">Facebook</li>
+                <li class="profile-description"><a href="https://www.facebook.com/byounguook.choi" target="_blank">Go to Facebook</a></li>
+            </ul>
+        </div>
+        <div class="connect-section">
+            <h2>Please send an e-mail for inquiries</h2>
+            <form action="/" method="POST">
+                <input type="email" placeholder="Your Email Address">
+                <input type="text" placeholder="Your Name">
+                <input type="phone" placeholder="Yout Phone Number">
+                <textarea cols="30" rows="10" placeholder="Contents"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </footer>
 
 </div>
